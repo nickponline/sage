@@ -20,4 +20,4 @@ dynamic = ["version", "readme"]
 
 [tool.setuptools.dynamic]
 readme = {file = ["README.md"], content-type = "text/markdown"}
-version = {attr = "glue.__version__"}
+version = {attr = "sage.__version__"}
