@@ -1,3 +1,9 @@
-from sage.debug import DEBUG
+from sage.debug import debug
 
-DEBUG("X")
+
+
+import numpy as np
+
+Y = np.random.random((5, 5))
+debug("Y", Y)
+debug("name", 234)
