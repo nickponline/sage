@@ -1,0 +1,13 @@
+cache
+cache/*
+.DS_Store
+__pycache__
+__pycache__/*
+solar.py
+.pytest*
+*.json
+*.wkt
+*.jpg
+*.png
+checkpoints
+.git

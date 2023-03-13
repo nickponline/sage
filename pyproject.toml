@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage"
+description = "the sage package"
+keywords = ["geomatics", "vision"]
+classifiers = ["Development Status :: 5 - Production/Stable",
+ "Environment :: Console",
+ "Intended Audience :: Science/Research",
+ "Operating System :: OS Independent",
+ "Programming Language :: Python :: 3",
+]
+dependencies = [
+  'click'
+]
+requires-python = ">=3.10"
+dynamic = ["version", "readme"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+version = {attr = "glue.__version__"}
